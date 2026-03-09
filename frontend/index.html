@@ -703,6 +703,37 @@
             transform: translateY(0);
         }
 
+        .leadership-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+        }
+
+        .profile-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            border-top: 5px solid var(--harvest-gold);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            border: 4px solid var(--leaf-green);
+        }
+
+        @media (max-width: 768px) {
+            .leadership-team {
+                grid-template-columns: 1fr;
+            }
+        }
+
         /* Responsive Design */
         @media (max-width: 992px) {
             .about-content {
@@ -812,8 +843,10 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    GUNDAWA<span>AGRO</span>
-                </div>
+    <img src="WhatsApp Image 2026-03-02 at 1.49.55 PM.jpeg" alt="Gundawa Logo" style="height: 50px; width: auto;">
+    GUNDAWA<span>AGRO</span>
+</div>
+                
                 <nav>
                     <ul>
                         <li><a href="#home">Home</a></li>
@@ -829,10 +862,10 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-icons">
-            <div class="hero-icon">🌾</div>
-            <div class="hero-icon">🌱</div>
-            <div class="hero-icon">🍃</div>
-            <div class="hero-icon">🌻</div>
+            <div class="hero-icon"></div>
+            <div class="hero-icon"></div>
+            <div class="hero-icon"></div>
+            <div class="hero-icon"></div>
         </div>
         <div class="container hero-content">
             <h1>Quality Fertilizers for <span>Bountiful Harvests</span></h1>
@@ -862,12 +895,19 @@
                         <li>Competitive pricing</li>
                     </ul>
                 </div>
-                <div class="ceo-bio fade-in">
-                    <div class="ceo-image">
-                        <i class="fas fa-user-tie"></i>
+                <div class="leadership-team">
+                    <div class="profile-card">
+                        <img src="WhatsApp Image 2026-03-01 at 5.29.14 AM (1).jpeg" alt="CEO" class="profile-img">
+                        <h3>Umar Faruk Aliyu</h3>
+                        <p><strong>Founder & Managing Director.</strong></p>
+                        <p>I am personally committed to excellence in product quality, operational efficiency, and customer satisfaction. We understand that agriculture is not just a business; it is the foundation of livelihoods, communities, and national growth.</p>
                     </div>
-                    <h3>CEO's Message</h3>
-                    <p>At GUNDAWA AGRO ALLIED, we believe in empowering farmers with the right tools and knowledge to transform agriculture in Nigeria. Our commitment to quality and customer satisfaction drives everything we do.</p>
+                    <div class="profile-card">
+                        <img src="WhatsApp Image 2026-03-01 at 5.29.14 AM.jpeg" alt="HOD" class="profile-img">
+                        <h3>Abubakar Aliyu</h3>
+                        <p><strong>Board Director</strong></p>
+                        <p>At our core, we are committed to delivering high-quality fertilizer solutions that empower farmers, improve crop yields, and strengthen food security. We believe agriculture is the backbone of our economy, and we are proud to contribute to its growth through innovation, integrity, and consistency.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -922,9 +962,9 @@
             </div>
             
             <div class="contact-info fade-in">
-                <div class="contact-item">
+               <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>No.45 Wharf Road PZ, Zaria, Kaduna State, Nigeria</span>
+                    <span>Ungoggo Road, Kano State, Nigeria</span>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
@@ -958,7 +998,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 GUNDAWA AGRO ALLIED NIG LTD. All rights reserved.</p>
-            <p>Quality Fertilizers for a Greener Nigeria 🌿</p>
+            <p>Quality Fertilizers for a Greener Nigeria</p>
         </div>
     </footer>
 
