@@ -126,7 +126,7 @@
         }
 
         .section-title h2::before {
-            content: '';
+            content: '🌾';
             position: absolute;
             left: -50px;
             top: 50%;
@@ -436,7 +436,7 @@
         }
 
         .about-text h3::before {
-            content: '🌿';
+            content: '';
             font-size: 1.5rem;
         }
 
@@ -798,6 +798,12 @@
                 width: 100%;
                 max-width: 300px;
             }
+            .product-icon {
+                font-size: 1.2rem !important; /* Makes the numbers fit inside the circle */
+                font-weight: bold;
+                text-align: center;
+                line-height: 1.2;
+}
         }
 
         @media (max-width: 576px) {
@@ -920,36 +926,48 @@
                 <h2>Our Products</h2>
                 <p>Comprehensive range of agricultural solutions</p>
             </div>
-            <div class="products-grid">
-                <div class="product-card fade-in">
-                    <div class="product-icon">
-                        <i class="fas fa-seedling"></i>
-                    </div>
-                    <h3>NPK Fertilizers</h3>
-                    <p>Balanced nutrient formulas for optimal plant growth and yield enhancement across all crop types.</p>
-                </div>
-                <div class="product-card fade-in">
-                    <div class="product-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <h3>Urea Fertilizers</h3>
-                    <p>High-nitrogen content fertilizers for vigorous plant growth and development throughout the season.</p>
-                </div>
-                <div class="product-card fade-in">
-                    <div class="product-icon">
-                        <i class="fas fa-recycle"></i>
-                    </div>
-                    <h3>Organic Fertilizers</h3>
-                    <p>Eco-friendly solutions for sustainable farming and soil health improvement that protect the environment.</p>
-                </div>
-                <div class="product-card fade-in">
-                    <div class="product-icon">
-                        <i class="fas fa-flask"></i>
-                    </div>
-                    <h3>Specialty Blends</h3>
-                    <p>Custom formulations tailored to specific crops and soil conditions for maximum effectiveness.</p>
-                </div>
+           <section id="products" class="section products-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Products</h2>
+            <p>High-performance blends for superior soil nutrition</p>
+        </div>
+        <div class="products-grid">
+            <div class="product-card fade-in">
+                <div class="product-icon">15-15-15</div>
+                <h3>NPK 15-15-15</h3>
+                <p>A balanced multi-purpose fertilizer suitable for a wide variety of crops and soil types.</p>
             </div>
+            <div class="product-card fade-in">
+                <div class="product-icon">20-10-10</div>
+                <h3>NPK 20-10-10</h3>
+                <p>Optimized for nitrogen-heavy requirements to boost vegetative growth and leaf development.</p>
+            </div>
+            <div class="product-card fade-in">
+                <div class="product-icon">20-10-10+S</div>
+                <h3>NPK 20-10-10+S</h3>
+                <p>Enriched with Sulfur to improve crop quality and increase resistance to environmental stress.</p>
+            </div>
+            <div class="product-card fade-in">
+                <div class="product-icon">20-10-05</div>
+                <h3>NPK 20-10-05</h3>
+                <p>Tailored phosphorus and potassium levels for specific regional soil deficiencies.</p>
+            </div>
+            <div class="product-card fade-in">
+                <div class="product-icon">27-13-13</div>
+                <h3>NPK 27-13-13</h3>
+                <p>A high-analysis blend designed for intensive farming and maximum yield output.</p>
+            </div>
+            <div class="product-card fade-in" style="border-top-color: var(--harvest-gold);">
+                <div class="product-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <h3>Custom Blends</h3>
+                <p><strong>We offer professional custom blending services!</strong> Tell us your soil requirements, and we will create a formula specifically for your farm.</p>
+            </div>
+        </div>
+    </div>
+</section>
         </div>
     </section>
 
